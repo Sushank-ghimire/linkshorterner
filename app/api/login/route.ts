@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(
       { message: "User loggedin successfully.", user: user },
-      { status: 201 }
+      { status: 200 }
     );
   } catch (_) {
     return NextResponse.json(
@@ -59,7 +59,7 @@ export async function DELETE() {
       {
         message: "User logout successfully",
       },
-      { status: 201 }
+      { status: 200 }
     );
   } catch (_) {
     return NextResponse.json(

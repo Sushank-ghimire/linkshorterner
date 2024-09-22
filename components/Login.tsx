@@ -26,7 +26,7 @@ const Login = () => {
       });
       const resData = await res.json();
       if (res.ok) {
-        if (res.status === 201) {
+        if (res.status === 200) {
           router.push("/dashboard");
         }
         router.refresh();
