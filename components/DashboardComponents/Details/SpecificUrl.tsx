@@ -109,6 +109,8 @@ const SpecificUrl = ({ linkId }: { linkId: string }) => {
               <Image
                 src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${domain}/${urlData.shortedUrl}`}
                 alt="QrCode"
+                height={120}
+                width={120}
               />
             </div>
             <div className="flex space-y-2 flex-col">

@@ -62,6 +62,8 @@ const UrlCards = ({
           <Image
             src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${domain}/${urlsData.shortedUrl}`}
             alt="QrCode"
+            height={120}
+            width={120}
           />
         </div>
       </Link>

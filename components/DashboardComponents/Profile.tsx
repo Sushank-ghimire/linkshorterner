@@ -27,6 +27,8 @@ const Profile = ({
             className="h-8 mx-auto my-auto mt-3 bg-transparent w-8 cursor-pointer rounded-full"
             src={userImage}
             alt="Profile"
+            height={32}
+            width={32}
           />
         </MenubarTrigger>
         <MenubarContent>

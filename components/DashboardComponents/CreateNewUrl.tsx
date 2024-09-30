@@ -79,6 +79,8 @@ const CreateNewUrl = () => {
                   className="mx-auto"
                   src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${qrData}`}
                   alt="QrCode"
+                  height={120}
+                  width={120}
                 />
               </div>
             )}
