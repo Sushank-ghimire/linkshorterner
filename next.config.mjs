@@ -4,6 +4,8 @@ import { hostname } from "os";
 const nextConfig = {
   env: {
     DOMAIN: process.env.DOMAIN,
+    NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESENT:
+      process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESENT,
   },
   images: {
     remotePatterns: [

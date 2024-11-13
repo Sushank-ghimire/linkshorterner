@@ -9,7 +9,7 @@ interface CloudinaryUploadProps {
 const CloudinaryUpload = ({ setImage }: CloudinaryUploadProps) => {
   return (
     <CldUploadWidget
-      uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESENT}
+      uploadPreset={`${process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESENT}`}
       onSuccess={(results) => {
         const { event, info } = results;
 
