@@ -8,6 +8,7 @@ const nextConfig = {
       process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESENT,
     NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME:
       process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+    MONGO_URI: process.env.MONGO_URI,
   },
   images: {
     remotePatterns: [
