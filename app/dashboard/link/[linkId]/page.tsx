@@ -2,13 +2,14 @@ import Authenticator from "@/auth/Authenticator";
 import SpecificUrl from "@/components/DashboardComponents/Details/SpecificUrl";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     linkId: string; // This matches the dynamic route segment
-  };
+  }>;
 }
 
-const Page = ({ params }: PageProps) => {
-  
+const Page = async (props: PageProps) => {
+  const params = await props.params;
+
   const { linkId } = params; // Destructure the linkId from params
 
   return (
