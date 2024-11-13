@@ -6,6 +6,8 @@ const nextConfig = {
     DOMAIN: process.env.DOMAIN,
     NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESENT:
       process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESENT,
+    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME:
+      process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
   },
   images: {
     remotePatterns: [
